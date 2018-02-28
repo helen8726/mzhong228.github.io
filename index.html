@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minjing Zhong's portfolio</title>
+<link rel="shortcut icon" type="image/ico" href="favicon.ico">
+<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/footer.css" rel="stylesheet">
+	 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,300,100,700" rel="stylesheet" type="text/css">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+
+	
+	<style>.link a{text-decoration:none}</style> 
+	
+	
+	
+	<style>
+/* Center the loader */
+
+
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+		
+		
+		
+		#loader-background {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+			position: absolute;
+			z-index: 99;
+}
+
+.wrapper {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  filter: url('#goo');
+  animation: rotate-move 2s ease-in-out infinite;
+	z-index: 100;
+}
+
+.dot { 
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.dot-3 {
+  background-color: #D500F9;
+  animation: dot-3-move 2s ease infinite, index 6s ease infinite;
+}
+
+.dot-2 {
+  background-color: #6200EA;
+  animation: dot-2-move 2s ease infinite, index 6s -4s ease infinite;
+}
+
+.dot-1 {
+  background-color: black;
+  animation: dot-1-move 2s ease infinite, index 6s -2s ease infinite;
+}
+
+@keyframes dot-3-move {
+  20% {transform: scale(1)}
+  45% {transform: translateY(-18px) scale(.45)}
+  60% {transform: translateY(-90px) scale(.45)}
+  80% {transform: translateY(-90px) scale(.45)}
+  100% {transform: translateY(0px) scale(1)}
+}
+
+@keyframes dot-2-move {
+  20% {transform: scale(1)}
+  45% {transform: translate(-16px, 12px) scale(.45)}
+  60% {transform: translate(-80px, 60px) scale(.45)}
+  80% {transform: translate(-80px, 60px) scale(.45)}
+  100% {transform: translateY(0px) scale(1)}
+}
+
+@keyframes dot-1-move {
+  20% {transform: scale(1)}
+  45% {transform: translate(16px, 12px) scale(.45)}
+  60% {transform: translate(80px, 60px) scale(.45)}
+  80% {transform: translate(80px, 60px) scale(.45)}
+  100% {transform: translateY(0px) scale(1)}
+}
+
+@keyframes rotate-move {
+  55% {transform: translate(-50%, -50%) rotate(0deg)}
+  80% {transform: translate(-50%, -50%) rotate(360deg)}
+  100% {transform: translate(-50%, -50%) rotate(360deg)}
+}
+
+@keyframes index {
+  0%, 100% {z-index: 3}
+  33.3% {z-index: 2}
+  66.6% {z-index: 1}
+}
+		
+		
+		
+</style>
+	
+	
+</head>
+<body onload="myFunction()" style="margin:0;">
+	
+	
+	
+	<!--loader-->
+
+
+
+<div id="loader-background">
+	<div class="wrapper">
+  <div class="dot dot-1"></div>
+  <div class="dot dot-2"></div>
+  <div class="dot dot-3"></div>
+	</div>
+</div>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <defs>
+    <filter id="goo">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7"/>
+    </filter>
+  </defs>
+</svg>
+
+
+	
+	<!--navigation-->
+	
+<nav class="navbar navbar-fixed-top" role="navigation"> 
+    <div class="container-fluid"> 
+        <div class="navbar-header"> 
+            <a class="navbar-brand" href="index.html"> <img src="m.svg" width="28" height="28" alt=""></a> 
+        </div> 
+        <ul class="nav navbar-nav navbar-right"> 
+            <li><a href="index.html">home</a></li> 
+            
+			<li><a href="resume.pdf">about me</a></li> 
+        </ul> 
+    </div> 
+</nav>
+	
+ 
+	
+	
+	
+	
+	<!--animated background-->
+	
+	<div id="particles-js">  </div>
+	
+
+	<section class="b1">
+  <div class="in1">
+	  
+    <div class="content " >
+		<div style="display:none;" id="myDiv" class="animate-bottom">
+		
+		<h1><strong>M</strong>injing Zhong </h1>
+		 
+		<h1><strong>//</strong> Art & Technology</h1>
+		
+		</div>
+		<a href="#" class="scroll-down" address="true"></a>
+		
+		
+    </div>
+	
+		</div>	
+	</section>
+	
+		  <script src="js/particles.js"></script>
+  <script src="js/particles.min.js"></script>
+  <script src="js/app.js"></script>
+	
+	
+	
+	<!--gutenberg-->
+
+	
+
+	<section class="b2" id="gutenberg"  >
+		
+		
+		
+		
+		
+		
+		
+		<div class = "container">
+			<div class="row">
+				<div class="col-sm-2">
+                    <h2 ></h2>
+                </div>
+				
+				<div class="col-sm-5" >
+					<div class="link">
+					<a  href="gutenberg.html">
+					<h1>Project <font color="#FF3D00">G</font>utenberg</h1>
+				<h3>UX designer   2017/05-2017/07</h3>
+						<h3>Redesign of the oldest online digital library</h3></a></div>
+						<a class="btn" href="gutenberg.html">...explore</a>
+						
+                </div>
+				<div class="col-sm-1">
+                    <h2 ></h2>
+                </div>
+				<div class="col-sm-3">
+					<h3></h3>
+					
+                    <div class="logo">
+				 <a  href="gutenberg.html"> <img src="newbook.png" width= "50%" height="50%" alt="" style="vertical-align:middle"></a> 
+			</div>
+					<div class="col-sm-1">
+                    <h2 ></h2>
+                </div>
+                </div>
+			</div>
+			
+			
+			
+		</div>
+		<h1></h1>
+		<h1></h1>
+		
+		
+	<div id="opacity">
+		
+			<a  href="gutenberg.html"> <img src="laptop.png" width="100%"  alt="" style=""></a> 
+			
+	</div>
+		
+	</section>
+	
+	
+	
+	<!--ripple-->
+	
+	<section class="gradient" id="ripple">
+	
+		<section class="b2" >
+		<div class = "container">
+			<div class="row">
+				<div class="col-sm-2">
+                    <h2 ></h2>
+                </div>
+				<div class="col-sm-5 link">
+					<a  href="ripple.html">
+					<h1><font color="#FFFF00">R</font><font color="#E0F7FA">ipple</font></h1>
+					<h3><font color="#004D40">UX designer   2017</font></h3>
+					<h3><font color="#004D40">An app to curate and encourage the re-creation of public domain media</font></h3>
+					</a>
+				<a class="btn" href="ripple.html">...explore</a>
+                </div>
+				<div class="col-sm-1">
+                    <h2 ></h2>
+                </div>
+				<div class="col-sm-3">
+					<h3></h3>
+					
+                    <div class="logo">
+				 <a  href="ripple.html"> <img src="ripple.png" width="50%" height="50%" alt="" style="vertical-align:middle"></a> 
+			</div>
+					
+					<div class="col-sm-1">
+                    <h2 ></h2>
+                </div>
+                </div>
+			</div>
+			
+			
+			
+		</div>
+			<div id="right">
+			<a  href="ripple.html"> <img src="iphone.png" width="100%"  alt="" style=""></a>
+			</div>
+	</section>
+	</section>
+	
+	<!--VR-witt-->
+	<section id="black">
+	
+				<section class="b2">
+		<div class = "container">
+			<div class="row">
+				<div class="col-sm-2">
+                    <h2 ></h2>
+                </div>
+				<div class="col-sm-5 link">
+					<a  href="wittgenstein.html">
+					<h1><font color="white">The orthographic projection of </font><font color="#2962FF">W</font><font color="white">ittgenstein House</font></h1>
+				<h3><font color="white">VR artist   2017</font></h3>
+					<h3><font color="white">A VR artwork to explore the duality of a philosopher's archietecture</font></h3>
+					</a>
+				<a class="btn" href="#">...explore</a>
+                </div>
+				<div class="col-sm-1">
+                    <h2 ></h2>
+                </div>
+				<div class="col-sm-3">
+					<h3></h3>
+					
+                    <div class="logo">
+				 <a  href="wittgenstein.html"> <img src="w.png" width="50%" height="50%" alt="" style="vertical-align:middle"></a> 
+			</div>
+					
+					<div class="col-sm-1">
+                    <h2 ></h2>
+                </div>
+					
+                </div>
+			</div>
+			
+			
+			
+		</div>
+				
+		<div id="bottom">			
+		<a  href="wittgenstein.html"> <img src="vivehead.png" width="90%"  alt="" style="" align="center"></a>
+					</div>
+	</section>
+	
+	</section>
+		
+		
+	 <!--VR-Tiny pleasure-->
+	
+		<section id="grey">
+	
+				<section class="b2">
+		<div class = "container">
+			<div class="row">
+				<div class="col-sm-2">
+                    <h2 ></h2>
+                </div>
+				<div class="col-sm-5 link">
+					<a  href="tinypleasure.html">
+					<h1><font color="#BDBDBD">Tiny</font> <font color="#E040FB">P</font><font color="#BDBDBD">leasure</font></h1>
+					<h3><font color="#616161">VR artist   2017</font></h3>
+						<h3><font color="#616161">A VR environment to reveal the tiny but certain pleasure in our daily ritual life</font></h3></a>
+     
+				<a class="btn" href="tinypleasure.html">...explore</a>
+                </div>
+				<div class="col-sm-1">
+                    <h2 ></h2>
+                </div>
+				<div class="col-sm-3">
+					<h3></h3>
+					
+                    <div class="logo">
+				 <a  href="#"> <img src="ball.png" width="50%" height="50%" alt="" style="vertical-align:middle"></a> 
+					
+			</div>
+					
+                </div>
+			</div>
+			
+			
+			
+		</div>
+					
+					<div id="left">
+					<a  href="tinypleasure.html"> <img src="tracker.png" width="70%"  alt="" style=""></a>
+					</div>
+	</section>
+	
+	</section>
+	
+	
+		
+		
+		
+		<!--footer-->
+
+	<div class="content"> </div>
+	
+	
+	
+
+    <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+					<h1></h1>
+                    <a  href="index.html"> <img src="colorm.svg" width="100" height="100" alt="" style="vertical-align:middle"></a>
+                </div>
+                <div class="col-sm-3">
+                    <h5>"The limits of my language are the limits of my world"</h5>
+					<h5> -by Ludwig Wittgenstein</h5>
+                </div>
+            
+                <div class="col-sm-2">
+                    <h5></h5>
+                    <ul>
+                        <li><a href="#"></a></li>
+                      
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <div class="social-networks">
+						
+						<a href="https://www.linkedin.com/in/minjing-zhong-5566135b/" class="facebook"><i class="fa fa-linkedin-square"></i></a>
+						
+                        <a href="https://twitter.com/ZhongEcho?lang=en" class="twitter"><i class="fa fa-twitter"></i></a>
+                        
+                        <a href="https://plus.google.com/u/0/100669063087142194198" class="google"><i class="fa fa-google-plus"></i></a>
+                    </div>
+					<a href="mailto:echo.minjing.zhong@gmail.com?Subject=Hello%20again" target="_top" ><button type="button" class="btn btn-default" >Contact me</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+			<h5><font color= "#A1A1A1">© 2018 code and design by Minjing Zhong with love</font> </h5>
+        </div>
+    </footer>
+	
+	
+	
+	
+	  <script src="js/particles.js"></script>
+  <script src="js/particles.min.js"></script>
+	
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.3.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+		
+		
+  <script src="js/app.js"></script>
+		 <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+
+
+	
+	
+	
+	<script> 
+		$(function() {
+    $('.scroll-down').click (function() {
+      $('html, body').animate({scrollTop: $('#gutenberg').offset().top }, 'slow');
+      return false;
+    });
+  });
+	</script>
+
+	
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+     
+ 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
+<script src="project01/js/app.js"></script>
+	<script src="js/js.js"></script>
+
+
+<script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader-background").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+	
+</body>
+</html>
