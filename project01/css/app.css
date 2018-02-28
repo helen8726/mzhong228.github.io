@@ -24,28 +24,28 @@ video {
 .gutenberg .parallex{	
 	background:url(../image/gutenberg-cover2.jpg);
 	background-size: cover;
-
+   display: flex;
 	z-index: -100;
 	}
 
 .ripple .parallex{	
-	background:url(../image/ripple-cover.jpg);
+	background:url(../image/ripple-cover2.jpg);
 	background-size: cover;
-	
+	display: flex;
 	z-index: -100;
 	}
 
 .tiny-pleasure .parallex{	
 	background:url(../image/tiny-pleasure-cover.jpg);
 	background-size: cover;
-	
+	display: flex;
 	z-index: -100;
 	}
 
 .witt .parallex{	
 	background:url(../image/witt-cover.jpg);
 	background-size: cover;
-	
+	display: flex;
 	z-index: -100;
 	}
 
